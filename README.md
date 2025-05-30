@@ -1,10 +1,11 @@
-# Lachlan's dotfiles
+# Michael's dotfiles
 
 A minimal, carefully maintained collection of dotfiles for macOS. My philosophy is to delete unnecessary configurations as often as possible to keep things simple and maintainable.
 
 ## Overview
 
 These dotfiles help configure:
+
 - zsh with plugins (via antidote)
 - git configuration
 - Homebrew packages and applications
@@ -17,12 +18,13 @@ These dotfiles help configure:
 ## Installation
 
 ```bash
-git clone https://github.com/lox/dotfiles.git ~/.dotfiles
+git clone https://github.com/ransbymich/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./bootstrap.sh
 ```
 
 The installation process:
+
 1. Creates symlinks for all `*.symlink` files into your home directory
 2. Installs Homebrew packages defined in the Brewfile
 3. Runs topic-specific installers for additional setup
@@ -53,6 +55,7 @@ For detailed documentation on the Git identity management system, see [git/READM
 ## Customizing
 
 To add your own configurations:
+
 1. Create a new directory for your topic
 2. Add `.zsh` files for zsh configuration
 3. Add `.symlink` files that should be linked to your home directory
@@ -67,4 +70,5 @@ git pull
 ```
 
 ## Thanks to…
+
 - [Caarlos0's dotfiles](https://github.com/caarlos0/dotfiles)
