@@ -13,7 +13,6 @@ $jobs\
 $status\
 $memory_usage\
 $custom_hermit\
-$custom_firebase\
 $kubernetes\
 $time\
 $cmd_duration\
@@ -56,10 +55,3 @@ symbol = '🦀'
 style = 'bold yellow'
 format = 'in [$symbol]($style) '
 when = ''' test -n "$HERMIT_ENV" '''
-
-[custom.firebase]
-command = 'zsh -ic "geometry_firebase"'
-symbol = '🔥 '
-style = 'bold red'
-format = 'on [$symbol$output]($style) '
-when = ''' test -f .firebaserc '''
